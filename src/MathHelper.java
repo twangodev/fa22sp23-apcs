@@ -11,11 +11,8 @@ public class MathHelper {
     public static void test(Scanner kb, String str, int expected) {
         System.out.print(str + " = ");
         String response;
-        if (expected == kb.nextInt()) {
-            response = "Your answer is right";
-        } else {
-            response = "Your answer is wrong";
-        }
+        if (expected == kb.nextInt()) response = "Your answer is right";
+        else response = "Your answer is wrong";
         System.out.println(response);
     }
 
