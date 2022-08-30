@@ -1,4 +1,4 @@
-package hw01;
+package hw.hw01;
 
 public class AboutMe {
 

@@ -1,4 +1,4 @@
-package hw03;
+package hw.hw03;
 
 public class Lesson3 {
 
