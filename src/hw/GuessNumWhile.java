@@ -11,22 +11,23 @@ public class GuessNumWhile {
         int random = (int) (Math.random() * 20 + 1); // Generate random number between 1-20 (inclusive)
         System.out.println("Generated a random number!");
         while (true) {
-            myGuesser(kb, random);
+            if (myGuesser(kb, random)) break;
         }
     }
 
-    public static void myGuesser(Scanner kb, int realNumber) {
+    public static boolean myGuesser(Scanner kb, int realNumber) {
         System.out.print("Enter a guess: ");
         int input = kb.nextInt();
         int difference = input - realNumber;
         if (difference == 0) {
             System.out.println("You are so smart.");
-            return;
+            return true;
         } else if (difference > 0) {
             System.out.println("That was too big");
         } else { // difference < 0
             System.out.println("That was too small");
         }
+        return false;
     }
 
 }
