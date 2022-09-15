@@ -2,6 +2,7 @@ package hw;
 
 import java.util.Scanner;
 
+// James Ding
 public class SmallBigGame {
 
     double user, computer;

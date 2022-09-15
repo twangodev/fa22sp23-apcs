@@ -2,6 +2,7 @@ package hw.hw07;
 
 import java.util.Scanner;
 
+// James Ding
 public class RadiusOfCircle {
 
     public static void main(String[] args) {

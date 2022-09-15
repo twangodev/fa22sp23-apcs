@@ -2,6 +2,7 @@ package hw;
 
 import java.util.Scanner;
 
+// James Ding
 public class GuessNum {
 
     public static void main(String[] args) {
