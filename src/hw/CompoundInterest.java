@@ -16,7 +16,7 @@ public class CompoundInterest {
 
         int yearsPassed = 0;
         double current = principle;
-        while (current <= principle * 2) {
+        while (current < principle * 2) {
             current *= rate;
             yearsPassed++;
             System.out.println(yearsPassed + " year(s) has passed. You now have " + current);
