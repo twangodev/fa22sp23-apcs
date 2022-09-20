@@ -2,6 +2,7 @@ package classwork;
 
 import java.util.Scanner;
 
+// James Ding
 public class TimeLapsed {
 
     public static void main(String[] args) {

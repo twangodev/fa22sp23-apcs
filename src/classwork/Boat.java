@@ -1,5 +1,6 @@
 package classwork;
 
+// James Ding
 public class Boat {
 
     public static void main(String[] args) {

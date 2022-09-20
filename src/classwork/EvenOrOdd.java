@@ -2,6 +2,7 @@ package classwork;
 
 import java.util.Scanner;
 
+// James Ding
 public class EvenOrOdd {
 
     public static void main(String[] args) {

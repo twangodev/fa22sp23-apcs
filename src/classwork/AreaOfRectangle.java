@@ -1,5 +1,6 @@
 package classwork;
 
+// James Ding
 public class AreaOfRectangle {
 
     public static void main(String[] args) {
