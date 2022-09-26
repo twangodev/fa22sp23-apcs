@@ -34,15 +34,7 @@ public class RomanEncryption {
     }
 
     static String cipher(String raw, int offset) {
-        StringBuilder response = new StringBuilder();
-        String text = raw.toUpperCase();
-        for (int i = 0; i < text.length(); i++) {
-            char myCharacter = text.charAt(i);
-            if (!Character.isUpperCase(myCharacter)) continue;
-            char cipheredChar = (char) ((((int) myCharacter - 65 + offset) % 26) + 65) ;
-            response.append(cipheredChar);
-        }
-        return response.toString();
+        return decipher(raw, -offset);
     }
 
     static String decipher(String text, int offset) {
