@@ -5,6 +5,10 @@ import java.util.Scanner;
 // James Ding
 public class CompoundInterest {
 
+    /**
+     * Calculates the amount of years it would take to have double the principle with a specified interest rate
+     * @param args Not used
+     */
     public static void main(String[] args) {
         Scanner kb = new Scanner(System.in);
         System.out.print("Enter the principle: ");

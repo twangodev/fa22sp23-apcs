@@ -33,10 +33,22 @@ public class RomanEncryption {
         }
     }
 
+    /**
+     * Encrypts a String by using an offset
+     * @param raw The original string
+     * @param offset The amount of characters to offset by
+     * @return A new string where characters are shifted by offset
+     */
     static String cipher(String raw, int offset) {
         return decipher(raw, -offset);
     }
 
+    /**
+     * Decrypts a word with offset
+     * @param text The encrypted string
+     * @param offset The amount of characters used to encrypt the text
+     * @return A new string where characters are shifted to the original string
+     */
     static String decipher(String text, int offset) {
         StringBuilder response = new StringBuilder();
         for (int i = 0; i < text.length(); i++) {

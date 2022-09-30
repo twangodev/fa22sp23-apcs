@@ -7,6 +7,10 @@ import static java.lang.Math.abs;
 // James Ding
 public class Combination {
 
+    /**
+     * Calculates the nCr of two inputs
+     * @param args Not used
+     */
     public static void main(String[] args) {
         Scanner kb = new Scanner(System.in);
         System.out.print("Enter n, r: ");
@@ -20,6 +24,11 @@ public class Combination {
         System.out.println("nCr: " + nCr);
     }
 
+    /**
+     * Calculates the factorial of n
+     * @param n Input
+     * @return n!
+     */
     public static double factorial(double n) {
         if (n < 0) return -factorial(abs(n)); // Negative factorial
 

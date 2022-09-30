@@ -10,6 +10,10 @@ public class TimeLapsed {
         prompt(kb);
     }
 
+    /**
+     * Calculates the new time after a certain amount of minutes have passed
+     * @param kb Scanner
+     */
     public static void prompt(Scanner kb) {
         System.out.print("Enter: ");
         int hour = kb.nextInt();

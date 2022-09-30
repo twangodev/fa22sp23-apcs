@@ -10,6 +10,10 @@ public class EvenOrOdd {
         prompt(kb);
     }
 
+    /**
+     * Handles user interaction for EvenOdd behavior
+     * @param kb Scanner
+     */
     public static void prompt(Scanner kb) {
         System.out.print("Enter a integer: ");
         int input = kb.nextInt();

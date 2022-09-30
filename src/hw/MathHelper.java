@@ -11,6 +11,12 @@ public class MathHelper {
         test(kb, "10 - 3", 7);
     }
 
+    /**
+     * Prompts a user to answer a math question and responds accordingly
+     * @param kb Scanner
+     * @param str The string representation of an equation
+     * @param expected The expected result
+     */
     public static void test(Scanner kb, String str, int expected) {
         System.out.print(str + " = ");
         String response;

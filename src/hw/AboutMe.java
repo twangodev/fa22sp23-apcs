@@ -1,8 +1,12 @@
-package hw.hw01;
+package hw;
 
 // James Ding
 public class AboutMe {
 
+    /**
+     * HelloWorld
+     * @param args Not used
+     */
     public static void main(String[] args) {
         System.out.print("Hey I'm James. I enjoy coding, and I know Python, Java, Kotlin, and many other languages. ");
         System.out.println("I'm also taking APCS this year, so that's pretty neat.\n");
