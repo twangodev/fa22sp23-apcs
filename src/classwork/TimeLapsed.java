@@ -11,7 +11,7 @@ public class TimeLapsed {
     }
 
     /**
-     * Calculates the new time after a certain amount of minutes have passed
+     * Calculates the new time after a certain amount of minutes has passed
      * @param kb Scanner
      */
     public static void prompt(Scanner kb) {
