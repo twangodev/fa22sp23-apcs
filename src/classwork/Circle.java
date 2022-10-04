@@ -1,5 +1,6 @@
 package classwork;
 
+// James Ding
 public class Circle {
 
     private final double radius;
