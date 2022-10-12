@@ -1,5 +1,6 @@
 package hw;
 
+// James Ding
 public class Fraction {
 
     private int numerator, denominator;
