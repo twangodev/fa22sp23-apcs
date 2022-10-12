@@ -47,4 +47,20 @@ public class Rectangle {
         return length * width;
     }
 
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "length=" + length +
+                ", width=" + width +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Rectangle) {
+            Rectangle rect = (Rectangle) obj;
+            return width == rect.width && length == rect.length;
+        } else return false;
+    }
+
 }

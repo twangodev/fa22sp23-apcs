@@ -21,6 +21,9 @@ public class RectangleTest {
         System.out.println("Perimeter of a 3x10 rectangle: " + myRectangle.getPerimeter());
         System.out.println("Area of a 3x10 rectangle: " + myRectangle.getArea());
 
+        System.out.println(myRectangle);
+        System.out.println(myRectangle.equals(new Rectangle(3, 10))); // true
+
     }
 
 }
