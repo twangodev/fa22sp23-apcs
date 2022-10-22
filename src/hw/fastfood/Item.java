@@ -1,5 +1,6 @@
 package hw.fastfood;
 
+// James Ding
 public abstract class Item {
 
     private final double price, calories;

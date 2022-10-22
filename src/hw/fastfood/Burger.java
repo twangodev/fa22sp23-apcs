@@ -1,5 +1,6 @@
 package hw.fastfood;
 
+// James Ding
 public class Burger extends Item {
 
     private final int patties;

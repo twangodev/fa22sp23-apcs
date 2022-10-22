@@ -1,5 +1,6 @@
 package hw.fastfood;
 
+// James Ding
 public class Drink extends Item {
 
     private final char size;

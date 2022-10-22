@@ -1,7 +1,6 @@
 package hw.fastfood;
 
-import java.util.List;
-
+// James Ding
 public class Meal {
 
     private final Item burger, drink, side;

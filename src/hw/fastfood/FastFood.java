@@ -1,5 +1,6 @@
 package hw.fastfood;
 
+// James Ding
 public class FastFood {
 
     public static void main(String[] args) {
