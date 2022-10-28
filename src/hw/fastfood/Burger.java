@@ -18,7 +18,7 @@ public class Burger extends Item {
     public String toString() {
         return "Burger{" +
                 "patties=" + patties +
-                ", double=" + getPrice() +
+                ", price=" + getPrice() +
                 ", calories" + getCalories() +
                 '}';
     }
