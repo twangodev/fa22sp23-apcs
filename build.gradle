@@ -2,12 +2,13 @@ plugins {
     id 'java'
 }
 
-group 'org.example'
+group 'io.github.twangodev'
 version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
 }
+
 sourceSets {
     main {
         java {
