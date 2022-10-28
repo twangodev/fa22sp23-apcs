@@ -35,7 +35,9 @@ public class Statistics {
         int[] dist = new int[20];
 
         for (int i : ints) {
-            dist[i / 50]++;
+            int index = i / 50;
+            if (index == 20) index--;
+            dist[index]++;
         }
         return dist;
     }
