@@ -82,6 +82,7 @@ public class Statistics2 {
 
     public static void main(String[] args) {
         Statistics2 s = new Statistics2(100);
+        System.out.format("Mean: %.2f Standard Deviation: %.2f\n", s.mean(), s.standardDeviation());
         System.out.println(stringDotPlot(s.dotPlot(-6, 6, 0.1)));
     }
 
