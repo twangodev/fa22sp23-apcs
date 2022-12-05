@@ -10,6 +10,7 @@ public class StepTracker {
 
     public StepTracker(int minSteps) {
         this.minSteps = minSteps;
+        totalDays = 0;
         activeDays = 0;
         totalSteps = 0;
     }
