@@ -1,4 +1,4 @@
-package hw.battleships;
+package hw;
 
 import java.util.Scanner;
 
