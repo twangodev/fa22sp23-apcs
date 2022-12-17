@@ -7,6 +7,7 @@ public class GameMenu {
 
     /**
      * Mimics a game menu with a switch statement
+     *
      * @param args Not used
      */
     public static void main(String[] args) {

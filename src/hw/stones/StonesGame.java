@@ -25,33 +25,6 @@ public class StonesGame {
         return Arrays.binarySearch(possibleTakes, take) >= 0;
     }
 
-    public void announce(String s) {
-        if (announcePlays) {
-            System.out.println(s);
-        }
-    }
-
-    /**
-     * Simulates the game of stones with the two players
-     * @return The respective winner of the game
-     */
-    public void play() {
-        announce("There are currently " + stoneCount + " stones left.");
-        int take;
-        if (previous == p1) {
-            announce( p2.name + " is up.");
-            take = p2.move(this);
-            announce(p2.name + " takes " + take + " stones");
-            previous = p2;
-        } else {
-            announce(p1.name + " is up.");
-            take = p1.move(this);
-            announce(p1.name + " takes " + take + " stones");
-            previous = p1;
-        }
-        stoneCount -= take;
-    }
-
     public static void main(String[] args) {
         StonesPlayer p1 = new ShenStones();
         StonesPlayer p2 = new DingStones();
@@ -72,6 +45,34 @@ public class StonesGame {
         StonesGame gameCopy = new StonesGame(game.p1, game.p2, game.stoneCount, announcePlays);
         gameCopy.previous = game.previous;
         return gameCopy;
+    }
+
+    public void announce(String s) {
+        if (announcePlays) {
+            System.out.println(s);
+        }
+    }
+
+    /**
+     * Simulates the game of stones with the two players
+     *
+     * @return The respective winner of the game
+     */
+    public void play() {
+        announce("There are currently " + stoneCount + " stones left.");
+        int take;
+        if (previous == p1) {
+            announce(p2.name + " is up.");
+            take = p2.move(this);
+            announce(p2.name + " takes " + take + " stones");
+            previous = p2;
+        } else {
+            announce(p1.name + " is up.");
+            take = p1.move(this);
+            announce(p1.name + " takes " + take + " stones");
+            previous = p1;
+        }
+        stoneCount -= take;
     }
 
 }

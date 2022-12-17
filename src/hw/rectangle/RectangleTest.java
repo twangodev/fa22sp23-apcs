@@ -4,7 +4,7 @@ package hw.rectangle;
 public class RectangleTest {
 
     public static void main(String[] args) {
-        Rectangle square = new Rectangle(1,1);
+        Rectangle square = new Rectangle(1, 1);
         System.out.println("Perimeter of a 1x1 square: " + square.getPerimeter());
         System.out.println("Area of a 1x1 square: " + square.getArea());
 

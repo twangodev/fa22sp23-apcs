@@ -11,6 +11,7 @@ public class Circle {
 
     /**
      * Calculates the circumference of a circle
+     *
      * @return 2 * pi * radius
      */
     public double getCircumference() {
@@ -19,6 +20,7 @@ public class Circle {
 
     /**
      * Calculates the area of a circle
+     *
      * @return pi * radius ^ 2
      */
     public double getArea() {

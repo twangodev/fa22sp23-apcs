@@ -12,6 +12,7 @@ public class TimeLapsed {
 
     /**
      * Calculates the new time after a certain amount of minutes has passed
+     *
      * @param kb Scanner
      */
     public static void prompt(Scanner kb) {
@@ -20,7 +21,7 @@ public class TimeLapsed {
         int minute = kb.nextInt();
         System.out.print("Minutes to pass: ");
         int pass = kb.nextInt();
-        System.out.println("The end time is: " + (hour + pass/60) + ":" + (minute + (pass % 60)));
+        System.out.println("The end time is: " + (hour + pass / 60) + ":" + (minute + (pass % 60)));
     }
 
 }

@@ -5,16 +5,22 @@ public class Fraction {
 
     private int numerator, denominator;
 
+    public Fraction(int numerator, int denominator) {
+        this.numerator = numerator;
+        this.denominator = denominator;
+    }
+
+    public static void main(String[] args) {
+        Fraction f = new Fraction(2, 5);
+        System.out.println(f.eval());
+        System.out.println(f.add(new Fraction(3, 7)));
+    }
+
     public void setNumerator(int numerator) {
         this.numerator = numerator;
     }
 
     public void setDenominator(int denominator) {
-        this.denominator = denominator;
-    }
-
-    public Fraction(int numerator, int denominator) {
-        this.numerator = numerator;
         this.denominator = denominator;
     }
 
@@ -31,12 +37,6 @@ public class Fraction {
     @Override
     public String toString() {
         return numerator + "/" + denominator;
-    }
-
-    public static void main(String[] args) {
-        Fraction f = new Fraction(2, 5);
-        System.out.println(f.eval());
-        System.out.println(f.add(new Fraction(3, 7)));
     }
 
 }

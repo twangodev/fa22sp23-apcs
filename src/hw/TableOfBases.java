@@ -14,6 +14,7 @@ public class TableOfBases {
 
     /**
      * Converts a decimal to binary
+     *
      * @param decimal The number in base 10 form
      * @return Binary
      */
@@ -24,6 +25,7 @@ public class TableOfBases {
 
     /**
      * Converts a decimal to octal
+     *
      * @param decimal The number in base 10 form
      * @return Octal
      */
@@ -34,23 +36,31 @@ public class TableOfBases {
 
     /**
      * Converts numbers 10-15 to the proper alphabetical representation
+     *
      * @param decimal The single number to convert to base 16 form
      * @return The hex string of the decimal specified
      */
     static String getHexString(int decimal) {
         switch (decimal) {
-            case 10: return "A";
-            case 11: return "B";
-            case 12: return "C";
-            case 13: return "D";
-            case 14: return "E";
-            case 15: return "F";
+            case 10:
+                return "A";
+            case 11:
+                return "B";
+            case 12:
+                return "C";
+            case 13:
+                return "D";
+            case 14:
+                return "E";
+            case 15:
+                return "F";
         }
         return Integer.toString(decimal);
     }
 
     /**
      * Converts a decimal to hex
+     *
      * @param decimal The number in base 10 form
      * @return Hexadecimal
      */

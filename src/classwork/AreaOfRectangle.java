@@ -9,6 +9,7 @@ public class AreaOfRectangle {
 
     /**
      * Produces the area of a rectangle with a and b as sides
+     *
      * @param a The width of the rectangle
      * @param b The length of the rectangle
      * @return a * b

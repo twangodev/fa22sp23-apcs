@@ -2,6 +2,7 @@ package hw.dist;
 
 import java.util.Scanner;
 
+// James Ding
 public class Tester {
 
     public static void main(String[] args) {

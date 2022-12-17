@@ -16,9 +16,10 @@ public class GuessNum {
 
     /**
      * Prompts users to guess a specified number by giving hints on whether their guess was too large or too small
-     * @param kb Scanner
+     *
+     * @param kb         Scanner
      * @param realNumber The number the user is attempting to guess
-     * @param attempts Attempts remaining
+     * @param attempts   Attempts remaining
      */
     public static void myGuesser(Scanner kb, int realNumber, int attempts) {
         if (attempts == 0) {

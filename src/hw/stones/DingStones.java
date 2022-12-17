@@ -29,7 +29,9 @@ public class DingStones extends StonesPlayer {
 
     public int move(StonesGame game) {
         HashMap<Integer, Integer> results = new HashMap<>();
-        for (int i : StonesGame.possibleTakes) {results.put(i, 0);}
+        for (int i : StonesGame.possibleTakes) {
+            results.put(i, 0);
+        }
         for (int take : StonesGame.possibleTakes) {
             results.put(take, totalPossibleSolutions(take, game));
         }

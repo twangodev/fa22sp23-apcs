@@ -9,6 +9,7 @@ public class Combination {
 
     /**
      * Calculates the nCr of two inputs
+     *
      * @param args Not used
      */
     public static void main(String[] args) {
@@ -26,6 +27,7 @@ public class Combination {
 
     /**
      * Calculates the factorial of n
+     *
      * @param n Input
      * @return n!
      */

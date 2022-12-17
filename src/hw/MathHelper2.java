@@ -23,6 +23,7 @@ public class MathHelper2 {
 
     /**
      * Generate a pseudo random numbers within the range [a, b)
+     *
      * @param a Lower limit for generation, inclusive
      * @param b Upper limit for generation, exclusive
      * @return A randomly generated number
@@ -33,40 +34,53 @@ public class MathHelper2 {
 
     /**
      * Converts an operation id to String
+     *
      * @param id An integer from 0-3, representing the type of opereation
      * @return The string representation of an operation id
      */
     public static char getOperation(int id) {
         switch (id) {
-            case 0: return '+';
-            case 1: return '-';
-            case 2: return '*';
-            case 3: return '/';
-            default: return ' ';
+            case 0:
+                return '+';
+            case 1:
+                return '-';
+            case 2:
+                return '*';
+            case 3:
+                return '/';
+            default:
+                return ' ';
         }
     }
 
     /**
      * Produces the expected result of an operation
+     *
      * @param id An integer from 0-3, representing the type of operation
-     * @param a The first input
-     * @param b The second input
+     * @param a  The first input
+     * @param b  The second input
      * @return a id b
      */
     public static int getExpectedResult(int id, int a, int b) {
         switch (id) {
-            case 0: return a + b ;
-            case 1: return a - b;
-            case 2: return a * b;
-            case 3: return a / b;
-            default: return 0;
+            case 0:
+                return a + b;
+            case 1:
+                return a - b;
+            case 2:
+                return a * b;
+            case 3:
+                return a / b;
+            default:
+                return 0;
         }
     }
 
     /**
      * Test interaction with user
-     * @param kb Scanner
-     * @param str The question prompt
+     *
+     * @param kb       Scanner
+     * @param str      The question prompt
      * @param expected Expected result
      * @return Whether the user answered correctly
      */
@@ -82,9 +96,10 @@ public class MathHelper2 {
 
     /**
      * Recursively run the game
-     * @param kb Scanner
-     * @param times Number of times to run game
-     * @param lowBound Lower RNG bound, inclusive
+     *
+     * @param kb        Scanner
+     * @param times     Number of times to run game
+     * @param lowBound  Lower RNG bound, inclusive
      * @param highBound Upper RNG bound, exclusive
      * @return The amount of correct answers the user scored
      */

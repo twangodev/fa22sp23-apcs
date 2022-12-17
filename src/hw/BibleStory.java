@@ -1,14 +1,22 @@
 package hw;
 
-import java.time.Year;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
-
 // James Ding
 public class BibleStory {
 
     private String title, year, summary, story, characters, verses;
+
+    public BibleStory(String title, String year, String summary, String story, String characters, String verses) {
+        this.title = title;
+        this.year = year;
+        this.summary = summary;
+        this.story = story;
+        this.characters = characters;
+        this.verses = verses;
+    }
+
+    public static void main(String[] args) {
+
+    }
 
     public String getTitle() {
         return title;
@@ -58,15 +66,6 @@ public class BibleStory {
         this.verses = verses;
     }
 
-    public BibleStory(String title, String year, String summary, String story, String characters, String verses) {
-        this.title = title;
-        this.year = year;
-        this.summary = summary;
-        this.story = story;
-        this.characters = characters;
-        this.verses = verses;
-    }
-
     /**
      * Prints the story with verses
      */
@@ -81,10 +80,6 @@ public class BibleStory {
                 "title='" + title + '\'' +
                 ", summary='" + summary + '\'' +
                 '}';
-    }
-
-    public static void main(String[] args) {
-
     }
 
 }

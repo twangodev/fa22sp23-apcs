@@ -2,11 +2,12 @@ package classwork.bankaccount;
 
 import java.util.Arrays;
 
+// James Ding
 public class Tester {
 
     public static void main(String[] args) {
         String[] names = {"Mr. Shen", "Bob", "Jeremy", "Christine", "James", "Emily", "Aston", "Aiden",
-                "Kyle", "Jacob", "Bryan", "Rapunzel", "Ellen", "Ethan", "Jennayce", "Kirat", "Leo" };
+                "Kyle", "Jacob", "Bryan", "Rapunzel", "Ellen", "Ethan", "Jennayce", "Kirat", "Leo"};
         BankAccount[] bankAccounts = new BankAccount[names.length];
         int id = 1000;
         double money = 9999.99;

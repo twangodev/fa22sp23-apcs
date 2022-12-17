@@ -1,5 +1,6 @@
 package classwork.automobile;
 
+// James Ding
 public class Automobile {
 
     private double mpg, gallons;

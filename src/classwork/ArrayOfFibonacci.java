@@ -3,6 +3,7 @@ package classwork;
 import java.util.Arrays;
 import java.util.Scanner;
 
+// James Ding
 public class ArrayOfFibonacci {
 
     public static int fibonacci(int n) {

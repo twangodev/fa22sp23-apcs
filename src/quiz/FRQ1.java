@@ -1,5 +1,6 @@
 package quiz;
 
+// James Ding
 public class FRQ1 {
 
     static double findAverage(int n) {

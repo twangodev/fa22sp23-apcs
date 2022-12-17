@@ -1,7 +1,7 @@
 package hw.stones;
 
 // James Ding
-public class ShenStones extends StonesPlayer{
+public class ShenStones extends StonesPlayer {
 
     public ShenStones() {
         super("Mr. Shen");

@@ -11,12 +11,14 @@ public class GuessNumWhile {
 
         int random = (int) (Math.random() * 20 + 1); // Generate random number between 1-20 (inclusive)
         System.out.println("Generated a random number!");
-        while (!myGuesser(kb, random)) {}
+        while (!myGuesser(kb, random)) {
+        }
     }
 
     /**
      * Prompts users to guess a specified number by giving hints on whether their guess was too large or too small
-     * @param kb Scanner
+     *
+     * @param kb         Scanner
      * @param realNumber The number the user is attempting to guess
      * @return Whether the user guessed correctly
      */

@@ -12,6 +12,7 @@ public class EvenOrOdd {
 
     /**
      * Handles user interaction for EvenOdd behavior
+     *
      * @param kb Scanner
      */
     public static void prompt(Scanner kb) {

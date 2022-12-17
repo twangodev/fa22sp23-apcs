@@ -1,7 +1,5 @@
 package hw;
 
-import java.util.Objects;
-
 // James Ding
 public class Student {
 
@@ -9,14 +7,26 @@ public class Student {
     private Double gpa;
     private int numOfClass;
 
-    public Double getGpa() {
-        return gpa;
-    }
-
     public Student(String name, Double gpa, int numOfClass) {
         this.name = name;
         this.gpa = gpa;
         this.numOfClass = numOfClass;
+    }
+
+    public static void main(String[] args) {
+        Student james = new Student("James", 4.3, 1);
+        james.takeClass(80, true); // AP Language Moment
+        System.out.println(james);
+
+        Student bryan = new Student("Bryan", 4.6, 1);
+        bryan.takeClass(90, true); // AP Language moment
+        System.out.println(bryan);
+
+        System.out.println(james.equals(bryan));
+    }
+
+    public Double getGpa() {
+        return gpa;
     }
 
     private double gradeToGpa(int grade) {
@@ -56,7 +66,6 @@ public class Student {
         numOfClass++;
     }
 
-
     @Override
     public String toString() {
         return "Student{" +
@@ -72,18 +81,6 @@ public class Student {
         if (!(o instanceof Student)) return false;
         Student student = (Student) o;
         return numOfClass == student.numOfClass && name.equals(student.name) && getGpa().equals(student.getGpa());
-    }
-
-    public static void main(String[] args) {
-        Student james = new Student("James", 4.3, 1);
-        james.takeClass(80, true); // AP Language Moment
-        System.out.println(james);
-
-        Student bryan = new Student("Bryan", 4.6, 1);
-        bryan.takeClass(90, true); // AP Language moment
-        System.out.println(bryan);
-
-        System.out.println(james.equals(bryan));
     }
 
 }

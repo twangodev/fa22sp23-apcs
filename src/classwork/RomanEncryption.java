@@ -35,7 +35,8 @@ public class RomanEncryption {
 
     /**
      * Encrypts a String by using an offset
-     * @param raw The original string
+     *
+     * @param raw    The original string
      * @param offset The amount of characters to offset by
      * @return A new string where characters are shifted by offset
      */
@@ -45,7 +46,8 @@ public class RomanEncryption {
 
     /**
      * Decrypts a word with offset
-     * @param text The encrypted string
+     *
+     * @param text   The encrypted string
      * @param offset The amount of characters used to encrypt the text
      * @return A new string where characters are shifted to the original string
      */

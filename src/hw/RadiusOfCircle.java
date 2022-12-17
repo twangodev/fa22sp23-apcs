@@ -13,7 +13,7 @@ public class RadiusOfCircle {
     }
 
     private static double calculateRadius(double area) {
-        return Math.sqrt(area/Math.PI);
+        return Math.sqrt(area / Math.PI);
     }
 
 }

@@ -7,6 +7,7 @@ public class NameReversal {
 
     /**
      * Reverses ones name
+     *
      * @param args Not used
      */
     public static void main(String[] args) {

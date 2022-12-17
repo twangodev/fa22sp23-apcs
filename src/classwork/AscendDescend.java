@@ -27,7 +27,7 @@ public class AscendDescend {
     }
 
     public static void main(String[] args) {
-        String[] ss = new String[] {"Bill", "Mary", "Lee", "Agnes", "Alfred", "Thomas", "Alvin", "Benard", "Erza", "Herman"};
+        String[] ss = new String[]{"Bill", "Mary", "Lee", "Agnes", "Alfred", "Thomas", "Alvin", "Benard", "Erza", "Herman"};
         String[] sorted = sort(ss);
         String[] reversed = reverse(sorted);
 

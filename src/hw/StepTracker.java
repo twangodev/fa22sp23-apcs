@@ -15,6 +15,23 @@ public class StepTracker {
         totalSteps = 0;
     }
 
+    public static void main(String[] args) {
+        StepTracker tr = new StepTracker(10000);
+        System.out.println("Active days: " + tr.activeDays());
+        System.out.println("Average steps: " + tr.averageSteps());
+        tr.addDailySteps(9000);
+        tr.addDailySteps(5000);
+        System.out.println("Active days: " + tr.activeDays());
+        System.out.println("Average steps: " + tr.averageSteps());
+        tr.addDailySteps(13000);
+        System.out.println("Active days: " + tr.activeDays());
+        System.out.println("Average steps: " + tr.averageSteps());
+        tr.addDailySteps(23000);
+        tr.addDailySteps(1111);
+        System.out.println("Active days: " + tr.activeDays());
+        System.out.println("Average steps: " + tr.averageSteps());
+    }
+
     public void addDailySteps(int steps) {
         totalSteps += steps;
         totalDays++;
@@ -32,23 +49,6 @@ public class StepTracker {
             return 0;
         }
         return (double) totalSteps / totalDays;
-    }
-
-    public static void main(String[] args) {
-        StepTracker tr = new StepTracker(10000);
-        System.out.println("Active days: " + tr.activeDays());
-        System.out.println("Average steps: " + tr.averageSteps());
-        tr.addDailySteps(9000);
-        tr.addDailySteps(5000);
-        System.out.println("Active days: " + tr.activeDays());
-        System.out.println("Average steps: " + tr.averageSteps());
-        tr.addDailySteps(13000);
-        System.out.println("Active days: " + tr.activeDays());
-        System.out.println("Average steps: " + tr.averageSteps());
-        tr.addDailySteps(23000);
-        tr.addDailySteps(1111);
-        System.out.println("Active days: " + tr.activeDays());
-        System.out.println("Average steps: " + tr.averageSteps());
     }
 
 }

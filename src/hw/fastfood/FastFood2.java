@@ -1,7 +1,5 @@
 package hw.fastfood;
 
-import java.util.Arrays;
-
 // James Ding
 public class FastFood2 {
 

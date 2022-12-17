@@ -1,5 +1,6 @@
 package hw.dist;
 
+// James Ding
 public class DistToLine {
 
     static double A, B, C;

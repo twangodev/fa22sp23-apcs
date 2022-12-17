@@ -13,6 +13,13 @@ public class Statistics {
         }
     }
 
+    public static void main(String[] args) {
+        Statistics stats = new Statistics();
+        System.out.println("Average: " + stats.average());
+        System.out.println("Largest: " + stats.largest());
+        System.out.println("Distribution: " + Arrays.toString(stats.distribution()));
+    }
+
     public double average() {
         int sum = 0;
         for (int i : ints) {
@@ -40,13 +47,6 @@ public class Statistics {
             dist[index]++;
         }
         return dist;
-    }
-
-    public static void main(String[] args) {
-        Statistics stats = new Statistics();
-        System.out.println("Average: " + stats.average());
-        System.out.println("Largest: " + stats.largest());
-        System.out.println("Distribution: " + Arrays.toString(stats.distribution()));
     }
 
 }

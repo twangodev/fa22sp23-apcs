@@ -10,7 +10,8 @@ public class SmallBigGame {
 
     /**
      * Creates a instance of the game
-     * @param initUser The initial amount of money the user has
+     *
+     * @param initUser     The initial amount of money the user has
      * @param initComputer The initial amount of money the computer has
      */
     public SmallBigGame(double initUser, double initComputer) {
@@ -18,8 +19,19 @@ public class SmallBigGame {
         computer = initComputer;
     }
 
+    public static void main(String[] args) {
+        Scanner kb = new Scanner(System.in);
+
+        SmallBigGame gameInstance = new SmallBigGame(100, 100);
+        while (gameInstance.winner == null) {
+            gameInstance.play(kb);
+        }
+        System.out.println(gameInstance.winner + " wins!");
+    }
+
     /**
      * Simulates the behavior of rolling a die
+     *
      * @return A randomly generated integer from 1-6
      */
     public int rollDice() {
@@ -28,6 +40,7 @@ public class SmallBigGame {
 
     /**
      * Simulates the behavior of rolling two die
+     *
      * @return The sum of two randomly generated integers from 1-6
      */
     public int rollSum() {
@@ -36,6 +49,7 @@ public class SmallBigGame {
 
     /**
      * Prompts user to enter a bet, ensuring that they do have enough money to do so
+     *
      * @param kb Scanner
      * @return A legal bet amount
      */
@@ -51,6 +65,7 @@ public class SmallBigGame {
 
     /**
      * Prompts user to enter a guess, ensuring that it can be understood
+     *
      * @param kb Scanner
      * @return A legal guess input, either big or small
      */
@@ -66,6 +81,7 @@ public class SmallBigGame {
 
     /**
      * Classifies a result as big or small
+     *
      * @param result The amount the dice rolled
      * @return A actual outcome
      */
@@ -77,6 +93,7 @@ public class SmallBigGame {
 
     /**
      * Adds amount to user, and subtracts from computer
+     *
      * @param amount The amount of money to add to user, remove from computer
      */
     public void doTransaction(double amount) {
@@ -94,6 +111,7 @@ public class SmallBigGame {
 
     /**
      * One round of the game
+     *
      * @param kb Scanner
      */
     public void play(Scanner kb) {
@@ -109,8 +127,7 @@ public class SmallBigGame {
         String classifiedResult = classifyResult(result);
         if (classifiedResult.equals("")) {
             System.out.println("Draw!");
-        }
-        else if (guess.equals(classifiedResult)) {
+        } else if (guess.equals(classifiedResult)) {
             System.out.println("You won that round!");
             doTransaction(bet);
         } else {
@@ -119,17 +136,6 @@ public class SmallBigGame {
         }
 
         setPossibleWinner();
-    }
-
-
-    public static void main(String[] args) {
-        Scanner kb = new Scanner(System.in);
-
-        SmallBigGame gameInstance = new SmallBigGame(100, 100);
-        while (gameInstance.winner == null) {
-            gameInstance.play(kb);
-        }
-        System.out.println(gameInstance.winner + " wins!");
     }
 
 }

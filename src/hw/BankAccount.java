@@ -16,32 +16,6 @@ public class BankAccount {
         this.balance = balance;
     }
 
-    /**
-     * Retrieves the balance of the account
-     */
-    public double getBalance() {
-        return balance;
-    }
-
-    /**
-     * Adds the given amount to the account balance
-     * @return The new balance
-     */
-    public double deposit(double amount) {
-        return balance += amount;
-    }
-
-    /**
-     * Subtracts the given amount from the account balance
-     * @return The new balance
-     */
-    public double withdraw(double amount) {
-        if (amount > balance) {
-            return -1; // Insufficient funds
-        }
-        return balance -= amount;
-    }
-
     public static void main(String[] args) {
         BankAccount account = new BankAccount(1234, "James Ding", 1000);
         System.out.println("Balance: " + account.getBalance());
@@ -55,6 +29,34 @@ public class BankAccount {
         if (newBalance == -1) {
             System.out.println("Insufficient funds");
         }
+    }
+
+    /**
+     * Retrieves the balance of the account
+     */
+    public double getBalance() {
+        return balance;
+    }
+
+    /**
+     * Adds the given amount to the account balance
+     *
+     * @return The new balance
+     */
+    public double deposit(double amount) {
+        return balance += amount;
+    }
+
+    /**
+     * Subtracts the given amount from the account balance
+     *
+     * @return The new balance
+     */
+    public double withdraw(double amount) {
+        if (amount > balance) {
+            return -1; // Insufficient funds
+        }
+        return balance -= amount;
     }
 
 }

@@ -8,8 +8,9 @@ public class Triplets {
 
     /**
      * Casts Math.pow to an int
+     *
      * @param base The base
-     * @param exp The exponent
+     * @param exp  The exponent
      * @return base^exp
      */
     public static int pow(int base, int exp) {
@@ -18,6 +19,7 @@ public class Triplets {
 
     /**
      * Concatenate two integer arrays
+     *
      * @param a The first array
      * @param b The second array
      * @return The concatenated array
@@ -37,6 +39,7 @@ public class Triplets {
 
     /**
      * Generate all possible triplets of a given length, recursively
+     *
      * @param limit The length of the triplets. Must be greater than 0
      * @return An array of all possible triplets
      */

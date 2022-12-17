@@ -1,12 +1,13 @@
 package hw;
 
+// James Ding
 @SuppressWarnings("AccessStaticViaInstance")
 public class TvShow {
 
-    public String actor1 = "Don Knots";
     public static String actor2 = "Homer Simpson";
     public static int numShows = 0;
     public static int x = 59;
+    public String actor1 = "Don Knots";
     public int y = 1059;
     public String showName;
 
@@ -17,10 +18,6 @@ public class TvShow {
 
     public static int numberOfShows() {
         return numShows;
-    }
-
-    public void setActor1(String act1) {
-        actor1 = act1;
     }
 
     public static void main(String[] args) {
@@ -47,6 +44,10 @@ public class TvShow {
         hc.x = 160;
         System.out.println(TvShow.x); // 160
         System.out.println(chrs.x); // 160
+    }
+
+    public void setActor1(String act1) {
+        actor1 = act1;
     }
 
 }

@@ -1,6 +1,8 @@
 package hw.stones;
 
 import java.util.Scanner;
+
+// James Ding
 public class HumanStones extends StonesPlayer {
 
     public HumanStones(String str) {
@@ -9,7 +11,7 @@ public class HumanStones extends StonesPlayer {
 
     @Override
     public int move(StonesGame game) {
-        Scanner kbInput = new Scanner (System.in);
+        Scanner kbInput = new Scanner(System.in);
         int user;
         while (true) {
             System.out.print("How many stones do you want to take? ");

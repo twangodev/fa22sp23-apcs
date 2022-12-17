@@ -1,5 +1,6 @@
 package hw;
 
+// James Ding
 public class Lesson3 {
 
     public void problem1() {
@@ -36,7 +37,7 @@ public class Lesson3 {
 
     public void problem7() {
         String m = "Look here!";
-        System.out.println("\"" + m + "\" has " +  m.length() + " characters.");
+        System.out.println("\"" + m + "\" has " + m.length() + " characters.");
     }
 
     public void problem8() {

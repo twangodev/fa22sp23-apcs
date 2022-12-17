@@ -6,6 +6,7 @@ public class BunnyEars {
     /**
      * Counts the amount of bunny ears recursively
      * Each third bunny is a naughty bunny, and will only have one ear
+     *
      * @param n The amount of bunnies in the line
      * @return The amount of ears that should be up
      */

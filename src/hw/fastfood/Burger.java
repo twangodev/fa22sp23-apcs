@@ -5,13 +5,13 @@ public class Burger extends Item {
 
     private final int patties;
 
-    public int getPatties() {
-        return patties;
-    }
-
     public Burger(int patties, double price, double calories) {
         super(price, calories);
         this.patties = patties;
+    }
+
+    public int getPatties() {
+        return patties;
     }
 
     @Override
