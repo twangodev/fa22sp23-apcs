@@ -1,9 +1,17 @@
 package hw;
 
+import java.util.Arrays;
+
 // James Ding
 public class Nim {
 
-    public static int[] getSums(int[] piles) {
+    final int[] piles;
+
+    public Nim(int[] piles) {
+        this.piles = piles;
+    }
+
+    public int[] getSums() {
         int[] sums = new int[4];
         for (int pile : piles) {
             for (int i = 0; i < 4; i++) {
@@ -16,4 +24,21 @@ public class Nim {
         return sums;
     }
 
+    public int whichPile() {
+        int bit = getSums().length - 1;
+        while (getSums()[bit] % 2 == 0) {
+            bit--;
+        }
+        for (int i = 0; i < piles.length; i++) {
+            if (((piles[i] >> bit) & 1) == 1 ) {
+                return i;
+            }
+        }
+        return 0;
+    }
+
+    @Override
+    public String toString() {
+        return Arrays.toString(piles);
+    }
 }
