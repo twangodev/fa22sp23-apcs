@@ -3,7 +3,7 @@ package hw.nim;
 import java.util.Arrays;
 
 // James Ding
-public class Nim {
+public class Nim_James_Jannyce {
 
     private static final int bitCount = 4;
     final int gameSize;
@@ -13,7 +13,7 @@ public class Nim {
      * Constructor for NimPlayer. Note that this assumes the maximum number of stones in a pile is within 0..15
      * @param gameSize The maximum number of piles
      */
-    public Nim(int gameSize) {
+    public Nim_James_Jannyce(int gameSize) {
         this.gameSize = gameSize;
     }
 
@@ -83,6 +83,11 @@ public class Nim {
         }
 
         return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "James Jannyce";
     }
 
 }

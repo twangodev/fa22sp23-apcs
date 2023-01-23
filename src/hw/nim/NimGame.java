@@ -11,9 +11,9 @@ public class NimGame {
         int nps = kb.nextInt();
         int[] piles = new int[nps];
         int[] temPiles;
-        Nim[] player = new Nim[2];
-        player[0] = new Nim (nps);
-        player[1] = new Nim (nps);
+        Nim_James_Jannyce[] player = new Nim_James_Jannyce[2];
+        player[0] = new Nim_James_Jannyce(nps);
+        player[1] = new Nim_James_Jannyce(nps);
         String msg;
         for (int i = 0; i < nps; i++) {
             piles[i]=(int) (Math.random()*15 + 1);
