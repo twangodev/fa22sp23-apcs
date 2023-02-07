@@ -32,6 +32,13 @@ public class BankAccount {
     }
 
     /**
+     * Retrieves the name of the account
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
      * Retrieves the balance of the account
      */
     public double getBalance() {
