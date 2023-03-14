@@ -1,5 +1,7 @@
 package hw;
 
+import hw.bank.BankAccount;
+
 import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Scanner;

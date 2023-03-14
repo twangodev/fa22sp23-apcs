@@ -1,7 +1,7 @@
-package hw;
+package hw.bank;
 
 // James Ding
-public class BankAccount {
+public class BankAccount implements Comparable<BankAccount> {
 
     private final int id;
     private final String name;
@@ -64,6 +64,16 @@ public class BankAccount {
             return -1; // Insufficient funds
         }
         return balance -= amount;
+    }
+
+    @Override
+    public int compareTo(BankAccount other) {
+        return name.compareTo(other.getName());
+    }
+
+    @Override
+    public String toString() {
+        return "BankAccount{" + "id=" + id + ", name=" + name + ", balance=" + balance + '}';
     }
 
 }
