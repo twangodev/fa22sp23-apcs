@@ -3,31 +3,26 @@ package classwork;
 public class ParenthesisChecker {
 
     public static boolean checkParenthesis(String s) {
+        return checkParenthesisCounter(s, 0);
+    }
 
-        String r = "";
-        for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == '(' || s.charAt(i) == ')') {
-                r += s.charAt(i);
-            }
+    private static boolean checkParenthesisCounter(String s, int counter) {
+        s = s.replaceAll("[^()]", "");
+        if (s.isEmpty()) return counter == 0;
+
+        if (s.charAt(0) == '(') {
+            return checkParenthesisCounter(s.substring(1), counter + 1);
         }
 
-        s = r;
-        if (s.length() == 0) {
-            return true;
-        }
-
-        char nextChar = s.charAt(0);
-        char lastChar = s.charAt(s.length() - 1);
-
-        if (nextChar == '(' && lastChar == ')') {
-            return checkParenthesis(s.substring(1, s.length() - 1));
+        if (s.charAt(0) == ')') {
+            return counter > 0 && checkParenthesisCounter(s.substring(1), counter - 1);
         }
 
         return false;
     }
 
     public static void main(String[] args) {
-        System.out.println(checkParenthesis("(() )"));
+        System.out.println(checkParenthesis("sin (e() ) ("));
     }
 
 }
