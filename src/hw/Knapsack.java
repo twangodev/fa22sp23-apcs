@@ -3,6 +3,7 @@ package hw;
 import java.util.ArrayList;
 
 public class Knapsack {
+
     public static void main (String[] args) {
         int[] bricks = {12, 4, 2, 1};
         System.out.println(knapsack(15, bricks, 0));
