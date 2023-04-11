@@ -6,7 +6,7 @@ import info.gridworld.actor.Bug;
 public class BoxBug extends Bug {
 
     private int steps;
-    private int sideLength;
+    private final int sideLength;
 
     public BoxBug(int length) {
         steps = 0;
