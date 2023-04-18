@@ -13,6 +13,7 @@ public class SpiralBug extends Bug {
         sideLength = length;
     }
 
+    @Override
     public void act() {
         if (steps < sideLength && canMove()) {
             move();
