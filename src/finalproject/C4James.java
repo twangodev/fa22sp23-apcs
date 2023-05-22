@@ -1,28 +1,8 @@
 package finalproject;
 
-import info.gridworld.actor.Actor;
-import info.gridworld.grid.Location;
-
 import java.awt.*;
 
 public class C4James extends C4Player {
-
-    private static class Decision {
-
-        protected int column;
-        protected int score;
-
-        public Decision(int column, int score) {
-            this.column = column;
-            this.score = score;
-        }
-
-        @Override
-        public String toString() {
-            return "Chose column " + column + " with score " + score + ".";
-        }
-
-    }
 
     public C4James(Color c, Color cc, String n, C4Board b) {
         super(c, cc, n, b);
@@ -98,6 +78,23 @@ public class C4James extends C4Player {
     @Override
     public boolean isHuman() {
         return false;
+    }
+
+    private static class Decision {
+
+        protected int column;
+        protected int score;
+
+        public Decision(int column, int score) {
+            this.column = column;
+            this.score = score;
+        }
+
+        @Override
+        public String toString() {
+            return "Chose column " + column + " with score " + score + ".";
+        }
+
     }
 
 }

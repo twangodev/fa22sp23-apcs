@@ -23,7 +23,6 @@ public class C4Human extends C4Player {
     }
 
     public void removePiece(int col) {
-        return;
     }
 
     public int check(int lastPlayer, int level) {

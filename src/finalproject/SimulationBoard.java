@@ -4,20 +4,17 @@ import info.gridworld.actor.Actor;
 import info.gridworld.grid.Location;
 
 import java.awt.*;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class SimulationBoard {
 
-    public ArrayList<String> moves = new ArrayList<>();
-
     public static int WIN_SCORE = 1000000;
-
-    private int[][] board;
     private final int winCount;
+    public ArrayList<String> moves = new ArrayList<>();
+    private int[][] board;
 
-    public SimulationBoard(int rows, int columns, int winCount)  {
+    public SimulationBoard(int rows, int columns, int winCount) {
         board = new int[rows][columns];
         this.winCount = winCount;
     }
@@ -44,7 +41,7 @@ public class SimulationBoard {
         board = new int[rows][columns];
 
         for (int r = 0; r < rows; r++) {
-            for (int c = 0; c < columns; c++ ) {
+            for (int c = 0; c < columns; c++) {
                 Location loc = new Location(r, c);
                 Actor actor = c4Board.getGrid().get(loc);
                 board[r][c] = actorLookup(actor, selfColor);
