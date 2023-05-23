@@ -10,7 +10,7 @@ import java.awt.*;
 
 public class C4Board extends ActorWorld {
 
-    private final int millis = 2000;
+    private final int millis = 10000;
     private C4Player[] player;
     private int current;
     private boolean gameOver = false;
