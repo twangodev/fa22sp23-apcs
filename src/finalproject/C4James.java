@@ -353,7 +353,6 @@ public class C4James extends C4Player {
         Decision d = optimizedMiniMax(boardSim, depth, Integer.MIN_VALUE, Integer.MAX_VALUE, true);
         System.out.println(d);
 
-        if (d.column == -1) return randomSelect(boardSim.getValidColumns());
         return d.column;
     }
 
