@@ -6,20 +6,48 @@ import info.gridworld.grid.Location;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Objects;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class C4James extends C4Player {
 
+    /**
+     * Custom implementation of connect-n, with features for simulation
+     */
     public static class SimulationBoard {
 
+        /**
+         * The score for a win
+         */
         public static int WIN_SCORE = 1000000;
+
+        /**
+         * The amount required for a win
+         */
         private final int winCount;
+
+        /**
+         * The moves that have been made so far.
+         * Note that this does not store moves that occurred before the board was loaded.
+         */
         public ArrayList<String> moves = new ArrayList<>();
+
+        /**
+         * The board, a 2D array of ints.
+         * 0 = empty
+         * 1 = player 1
+         * 2 = player 2
+         */
         private int[][] board;
 
         public SimulationBoard(int rows, int columns, int winCount) {
             board = new int[rows][columns];
             this.winCount = winCount;
+        }
+
+        public SimulationBoard(int rows, int columns) {
+            this(rows, columns, 4);
         }
 
         private int actorLookup(Actor actor, Color selfColor) {
@@ -319,11 +347,13 @@ public class C4James extends C4Player {
     public int move(int millis) {
         int rows = board.getGrid().getNumRows();
         int cols = board.getGrid().getNumCols();
-        SimulationBoard boardSim = new SimulationBoard(rows, cols, 4);
+        SimulationBoard boardSim = new SimulationBoard(rows, cols);
         boardSim.loadGameState(board, getColor());
         System.out.println(boardSim);
         Decision d = optimizedMiniMax(boardSim, depth, Integer.MIN_VALUE, Integer.MAX_VALUE, true);
         System.out.println(d);
+
+        if (d.column == -1) return randomSelect(boardSim.getValidColumns());
         return d.column;
     }
 
